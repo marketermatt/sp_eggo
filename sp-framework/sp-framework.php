@@ -107,4 +107,9 @@ require_once( get_template_directory() . '/sp-framework/functions/control-panel-
 // load backend control panel
 require_once( get_template_directory() . '/sp-framework/functions/control-panel.php' );
 		
+/////////////////////////////////////////////////////
+// include API manager code
+/////////////////////////////////////////////////////
+require_once( 'am/function.php' );
+		
 ?>
