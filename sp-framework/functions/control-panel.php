@@ -152,6 +152,15 @@ function sp_panel()
                             <li class="woo"><a href="#woo" title="WooCommerce Settings">WOO<br /><span><?php _e( 'settings', 'sp' ); ?></span></a></li>
                             <?php } ?>
                             <li class="help"><a href="#help" title="Help"><?php _e( 'HELP?', 'sp' ); ?></a></li>
+							
+							<div  style="float:left; margin:0px;">
+					<ul class="tabs">
+					<li class="License">
+					<a href="<?php echo esc_url( admin_url( 'index.php?page=api_manager_theme_eggo_dashboard' ) );?>" title="<?php esc_attr_e( 'License', 'sp-theme' ); ?>"><?php _e( 'License', 'sp-theme' ); ?></a>
+					</li>
+					</ul>
+					</div>
+							
                         </ul><!--close tabs-->
                     </div><!--close nav-->
                     <div id="header-meta" class="group">
