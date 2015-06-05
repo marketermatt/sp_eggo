@@ -159,7 +159,7 @@ class API_Manager_theme_Eggo {
 			$this->ame_deactivate_checkbox 			= 'am_deactivate_eggo_checkbox';
 			$this->ame_activation_tab_key 			= 'api_manager_theme_eggo_dashboard';
 			$this->ame_deactivation_tab_key 		= 'api_manager_theme_eggo_deactivation';
-			$this->ame_settings_menu_title 			= 'AM Theme Eggo';
+			$this->ame_settings_menu_title 			= 'SP Theme Eggo';
 			$this->ame_settings_title 				= 'API Manager Theme Eggo';
 			$this->ame_menu_tab_activation_title 	= __( 'License Activation', 'api-manager-eggo' );
 			$this->ame_menu_tab_deactivation_title 	= __( 'License Deactivation', 'api-manager-eggo' );
