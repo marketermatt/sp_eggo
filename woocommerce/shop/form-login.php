@@ -21,7 +21,7 @@ if (is_user_logged_in()) return;
 	<div class="group"></div>
 
 	<p class="form-row">
-		<?php $woocommerce->nonce_field('login', 'login') ?>
+		<?php wc_print_notices('login', 'login') ?>
 		<input type="submit" class="button" name="login" value="<?php _e('Login', 'sp'); ?>" />
 		<input type="hidden" name="redirect" value="<?php echo $redirect ?>" />
 		<a class="lost_password" href="<?php echo esc_url( wp_lostpassword_url( home_url() ) ); ?>"><?php _e('Lost Password?', 'sp'); ?></a>

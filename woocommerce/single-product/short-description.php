@@ -1,6 +1,9 @@
 <?php
 /**
  * Single Product Short Description
+ *
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 
 global $post;

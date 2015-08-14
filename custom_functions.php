@@ -39,6 +39,7 @@ if ( ! function_exists( 'get_plugins' ) ) {
     }
 	$all_plugins = get_plugins();
 	 $act_cnt=0;
+	 $inact_cnt=0;
   foreach($all_plugins as $key => $value)
 	{
 	  $mykey = $key;
@@ -120,6 +121,7 @@ if ( ! function_exists( 'get_plugins' ) ) {
 	$inactive_plugins='';
   $all_plugins = get_plugins();
 	 $act_cnt=0;
+	 $inact_cnt=0;
   foreach($all_plugins as $key => $value)
 	{
 	  $mykey = $key;

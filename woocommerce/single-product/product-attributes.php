@@ -3,6 +3,9 @@
  * Product attributes
  *
  * Used by list_attributes() in the products class
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.1.3
  */
 
 global $woocommerce;
@@ -45,7 +48,7 @@ if ( empty( $attributes ) && ( ! $product->enable_dimensions_display() || ( ! $p
 		?>
 			
 		<tr class="<?php if ( $alt == 1 ) echo 'alt'; ?>">
-			<th><?php echo $woocommerce->attribute_label( $attribute['name'] ); ?></th>
+			<th><?php echo wc_attribute_label( $attribute['name'] ); ?></th>
 			<td><?php
 				if ( $attribute['is_taxonomy'] ) {
 					

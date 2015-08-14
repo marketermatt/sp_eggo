@@ -188,7 +188,7 @@ class SP_WPEC_Price_Range_Slider extends WP_Widget
 			?>
 			<p>
             	<?php if ( isset( $_GET['range'] ) && $_GET['range'] != '' ) {
-					$range = explode( '-', mysql_real_escape_string( $_GET['range'] ) );
+					$range = explode( '-', addslashes( $_GET['range'] ) );
 					$selected_min = $range[0];
 					$selected_max = $range[1];
 				} else {

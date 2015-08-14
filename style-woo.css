@@ -5,6 +5,8 @@ WOOCOMMERCE STYLES
 To add in your own CSS styles, it is recommended that you create a file called custom_styles.css in your theme folder and the framework will automatically apply your CSS changes.  If you need more information, please visit the support forums at http://splashingpixels.com
 ----*/
 /* GENERAL */
+
+
 .quickview_popup {width:100%; height:100%; position:fixed; left:0; top:0; display:block; z-index:9500; background-color:#000; opacity:0.6;filter: alpha(opacity = 60);}
 div.alert {position:absolute;display:none;z-index:2000;opacity:0.8;filter:alpha(opacity = 60);background-color:#000;border-radius:5px;padding:10px;line-height:1.2em;font-size:10px; font-family:Helvetica,Arial,sans-serif;color:#fff;max-width:100px;}
 div.alert p {text-align:center;}
@@ -302,7 +304,7 @@ background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
 #single_product_page_container .input-button-buy:hover > span {background-position:0 0;}
 #single_product_page_container .input-button-buy button {background:none;outline:none;border:none;color:#fff;cursor:pointer;width:100%;height:100%;text-shadow:-1px -1px 0 rgba(0, 0, 0, 0.6);font-size:14px;}
 #single_product_page_container .loading_animation {clear:left; float:right; margin-top:21px; margin-right:2px; visibility:hidden; position:relative;}
-#single_product_page_container .wpcart_gallery a {display:inline-block;vertical-align:top;margin:5px 3px;border:2px solid #b1b1b1;border-radius:3px;}
+#single_product_page_container .wpcart_gallery a {display:inline-block;vertical-align:top;margin:5px 3px;border:2px solid #b1b1b1;border-radius:3px; width: 22.7%;}
 #single_product_page_container .wpcart_gallery a img {display:block;}
 #single_product_page_container .wpcart_gallery .preview_link {cursor:-moz-zoom-in;}
 #single_product_page_container .product_rating {position:absolute;top:46px;left:104px;}
@@ -359,7 +361,7 @@ table.shop_attributes td {padding:5px;background-color:#fff;}
 .single_product_display .variations_form label  {font-size:1em;line-height:1.2em;vertical-align:middle;color:#C64E4E;text-transform:capitalize;}
 .single_product_display .add-wrap {height:90px;text-align:right;clear:both;margin-top:30px;}
 .single_product_display .single_variation span.price ins {font-size:22px;}
-.single_product_display .quantity input.input-text {width:20px;text-align:center;background-image:none;background-color:#fff;border:1px solid #ccc;border-radius:2px;vertical-align:middle;}
+.single_product_display .quantity input.input-text {width:35px;text-align:center;background-image:none;background-color:#fff;border:1px solid #ccc;border-radius:2px;vertical-align:middle;}
 .single_product_display a.external-button:link, .single_product_display a.external-button:visited {background:url(images/grey_button.png) no-repeat bottom right transparent;padding:0 9px 0 0;display:inline-block;line-height:38px;color:#fff;text-shadow:-1px -1px 0 rgba(0, 0, 0, 0.6);position:relative;font-size:14px;text-decoration:none;float:right;margin-top:10px;clear:both;}
 .single_product_display a.external-button span {background:url(images/grey_button.png) no-repeat 0 -76px transparent;padding:0 0 0 9px;height:38px;display:block;}
 .single_product_display a.external-button:hover {background-position:right -38px;}
@@ -374,7 +376,7 @@ p.stock.out-of-stock {background:url(images/outofstock.png) no-repeat scroll 0 2
 /* RELATED PRODUCTS */
 #single_product_page_container .related.products span.divider, #single_product_page_container .upsell.products span.divider {background:url(images/divider.png) repeat-x scroll 0 0 transparent;width:100%;height:8px;display:block;margin:20px 0;}
 #single_product_page_container .related.products h2.section-title, #single_product_page_container .upsell.products h2.section-title {font-family:'JosefinSansBold',arial,sans-serif;font-style:normal;font-weight:normal;text-align:center;font-size:1.8em;margin-bottom:20px;color:#666;}
-#single_product_page_container .related ul.products li, #single_product_page_container .upsell ul.products li {text-align:center;margin:0 16px;float:left;list-style:none;}
+#single_product_page_container .related ul.products li, #single_product_page_container .upsell ul.products li {text-align:center;margin:0 16px;float:left;list-style:none; width:20%;}
 #single_product_page_container .related ul.products li span.sale, #single_product_page_container .upsell ul.products li span.sale {background:url(images/sprite.png) no-repeat scroll -66px 0 transparent;width:65px;height:65px;display:block;position:absolute;top:-3px;left:-3px;display:block;text-indent:-9999px;}
 #single_product_page_container .related.products .item_image, #single_product_page_container .upsell.products .item_image {overflow:visible;border:none;}
 #single_product_page_container .related.products span.hide, #single_product_page_container .upsell.products span.hide {background:url(images/sprite.png) no-repeat scroll 0 -269px transparent;width:206px;height:30px;display:block;margin-bottom:-12px;z-index:10;position:relative;left:-10px;}
@@ -500,7 +502,7 @@ table.shop_table.cart th {color:#333;font-size:1.0em;text-align:left;padding-bot
 table.shop_table.cart tr.cart_table_item {background:url("images/product-list-pattern.png") repeat-x scroll 0 0 transparent;border-top:1px solid #999;}
 table.shop_table.cart td {margin:0;padding:5px;vertical-align:middle;line-height:1.2em;}
 table.shop_table.cart td.product-thumbnail img {border:2px solid #666;border-radius:5px;width:50px;height:50px;}
-table.shop_table.cart input.text.qty {width:20px;text-align:center;margin:0 5px;background-color:#fff;}
+table.shop_table.cart input.text.qty {width:20px;text-align:center;margin:0 5px;background-color:#fff; width:30px;}
 table.shop_table.cart .quantity.buttons_added {float:none;}
 table.shop_table.cart dl.variation {font-size:0.8em;line-height:1.4em;}
 table.shop_table.cart dl.variation dt {float:left;clear:left;margin-right:6px;text-transform:capitalize;color:#000;}
@@ -810,3 +812,12 @@ background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
 border:1px solid #ddd;margin-top:20px;}
+
+.woocommerce-cart .cart-collaterals .shipping_calculator .shipping-calculator-button span:after{font-family:WooCommerce!important;speak:none!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;line-height:1!important;-webkit-font-smoothing:antialiased!important;margin-left:.618em!important;text-decoration:none!important;}
+.woocommerce-cart .cart-collaterals .shipping_calculator .shipping-calculator-button:after{ display:none;}
+.woocommerce .cart-collaterals .shipping_calculator, .woocommerce-page .cart-collaterals .shipping_calculator{ width:72%;}
+.cart_totals  .shipping td{    width: 70%;FLOAT: RIGHT;TEXT-ALIGN: RIGHT!important;}
+.woocommerce .cart-collaterals .shipping_calculator, .woocommerce-page .cart-collaterals .shipping_calculator {
+    width: 100%!important;
+}
+.wc-proceed-to-checkout .checkout-button{ display:none!important;}

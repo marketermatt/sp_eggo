@@ -6,7 +6,7 @@
 global $woocommerce;
 ?>
 
-<?php $woocommerce->show_messages(); ?>
+<?php wc_print_notices(); ?>
 
 <form action="<?php echo esc_url( get_permalink(woocommerce_get_page_id('change_password')) ); ?>" method="post" class="change-password">
 
@@ -22,7 +22,7 @@ global $woocommerce;
 	
 	<p><input type="submit" class="button" name="change_password" value="<?php _e('Save', 'sp'); ?>" /></p>
 	
-	<?php $woocommerce->nonce_field('change_password')?>
+	<?php wc_print_notices('change_password')?>
 	<input type="hidden" name="action" value="change_password" />
 	
 </form>

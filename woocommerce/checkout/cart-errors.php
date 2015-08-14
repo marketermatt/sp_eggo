@@ -1,10 +1,13 @@
 <?php
 /**
  * Cart errors page
+ *
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 ?>
 
-<?php $woocommerce->show_messages(); ?>
+<?php wc_print_notices(); ?>
 
 <p><?php _e('There are some issues with the items in your cart (shown above). Please go back to the cart page and resolve these issues before checking out.', 'sp') ?></p>
 

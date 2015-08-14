@@ -4,7 +4,7 @@ Theme URI: http://eggo.splashingpixels.com
 Description: A theme for digital downloads like apps or music...
 Author: Splashing Pixels
 Author URI: http://splashingpixels.com
-Version: 2.2.5
+Version: 2.2.6
 Tags: light,960,1-column,2-columns,3-columns,responsive,fun,downloads,digital
 
 License: GNU General Public License v2.0
@@ -1247,3 +1247,4 @@ div.uploader{position:relative;overflow:hidden;cursor:default}
 div.uploader span.action{float:left;display:inline;padding:2px 0;overflow:hidden;cursor:pointer}
 div.uploader span.filename{padding:0 10px;float:left;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:default}
 div.uploader input{opacity:0;filter:alpha(opacity:0);position:absolute;top:0;right:0;bottom:0;float:right;height:25px;border:none;cursor:default}
+.postid-62 .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary { width:100% !important;}

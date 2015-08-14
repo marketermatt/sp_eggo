@@ -24,9 +24,9 @@ function sp_ajax_login()
 	{
 	     die ( 'Busted!' );
 	}	
-	$log = mysql_real_escape_string( trim( $_POST['log_name'] ) );
-	$pwd = mysql_real_escape_string( trim( $_POST['pwd'] ) );	
-	$rememberme = mysql_real_escape_string( trim( $_POST['rememberme'] ) );	
+	$log = addslashes( trim( $_POST['log_name'] ) );
+	$pwd = addslashes( trim( $_POST['pwd'] ) );	
+	$rememberme = addslashes( trim( $_POST['rememberme'] ) );	
 	$creds = array();
 	$creds['user_login'] = $log;
 	$creds['user_password'] = $pwd;
@@ -61,7 +61,7 @@ function sp_ajax_lostpasswordform()
 	     die ( 'Busted!' );
 	}	
 	require_once( ABSPATH . WPINC . '/registration.php' );
-	$user_login = mysql_real_escape_string( trim( $_POST['user_login'] ) );
+	$user_login = addslashes( trim( $_POST['user_login'] ) );
     // checks the login against the username first and then the email
 	if ( username_exists( $user_login ) ) 
 	{

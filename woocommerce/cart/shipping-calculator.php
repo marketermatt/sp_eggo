@@ -1,6 +1,9 @@
 <?php
 /**
  * Shipping Calculator
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.0.8
  */
  
 global $woocommerce;
@@ -58,7 +61,7 @@ if ( get_option('woocommerce_enable_shipping_calc')=='no' || ! $woocommerce->car
 		</p>
 		<div class="group"></div>
 		<p><button type="submit" name="calc_shipping" value="1" class="button"><?php _e('Update Totals', 'sp'); ?></button></p>
-		<?php $woocommerce->nonce_field('cart') ?>
+		<?php wc_print_notices('cart') ?>
 	</section>
 </form>
 

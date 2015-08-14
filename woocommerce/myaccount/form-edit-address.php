@@ -1,6 +1,9 @@
 <?php
 /**
  * Edit Address Form
+ *
+ * @package     WooCommerce/Templates
+ * @version     2.1.0
  */
  
 global $woocommerce, $current_user;
@@ -8,7 +11,7 @@ global $woocommerce, $current_user;
 get_currentuserinfo();
 ?>
 
-<?php $woocommerce->show_messages(); ?>
+<?php wc_print_notices(); ?>
 
 <?php if (!$load_address) : ?>
 
@@ -35,7 +38,7 @@ get_currentuserinfo();
 		
 		<input type="submit" class="button" name="save_address" value="<?php _e('Save Address', 'sp'); ?>" />
 		
-		<?php $woocommerce->nonce_field('edit_address') ?>
+		<?php wc_print_notices('edit_address') ?>
 		<input type="hidden" name="action" value="edit_address" />
 	
 	</form>

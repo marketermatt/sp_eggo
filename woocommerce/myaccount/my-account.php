@@ -1,12 +1,15 @@
 <?php
 /**
  * My Account
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.0.0
  */
  
 global $woocommerce;
 ?>
 
-<?php $woocommerce->show_messages(); ?>
+<?php wc_print_notices(); ?>
 
 <p class="myaccount_user"><?php printf( __('Hello, <strong>%s</strong>. From your account dashboard you can view your recent orders, manage your shipping and billing addresses and <a href="%s">change your password</a>.', 'sp'), $current_user->display_name, get_permalink(woocommerce_get_page_id('change_password'))); ?></p>
 

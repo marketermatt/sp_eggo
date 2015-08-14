@@ -1,6 +1,9 @@
 <?php
 /**
  * Loop Add to Cart
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.1.0
  */
  
 global $product; 

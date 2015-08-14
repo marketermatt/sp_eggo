@@ -1,6 +1,9 @@
 <?php
 /**
  * Simple Product Add to Cart
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.1.0
  */
  
 global $woocommerce, $product;

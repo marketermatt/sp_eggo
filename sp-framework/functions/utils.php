@@ -43,7 +43,7 @@ function sp_check_version()
 		}
 		else 
 		{
-			$theme = get_theme_data( get_template_directory() . '/style.css' ); // deprecated function since 3.4
+			$theme = wp_get_theme( get_template_directory() . '/style.css' ); // deprecated function since 3.4
 		}
 
 		if ( is_array( $versions['versions'] ) ) 

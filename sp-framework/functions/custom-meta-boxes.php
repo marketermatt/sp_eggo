@@ -395,8 +395,8 @@ function sp_custom_meta_boxes_save( $post_id )
 		delete_post_meta( $post_id, '_sp_wpautop' );
 	}	 
 	// settings for truncate
-	$count = mysql_real_escape_string( trim( $_POST['sp_truncate_count'] ) );
-	$denote = mysql_real_escape_string( trim( $_POST['sp_truncate_denote'] ) );
+	$count = addslashes( trim( $_POST['sp_truncate_count'] ) );
+	$denote = addslashes( trim( $_POST['sp_truncate_denote'] ) );
 	$precision = ( ( $_POST['sp_truncate_precision'] == 1 ) ? true : false );
 	if ( $precision ) 
 	{

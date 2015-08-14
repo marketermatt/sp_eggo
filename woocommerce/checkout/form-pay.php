@@ -1,6 +1,9 @@
 <?php
 /**
  * Pay for order form
+ *
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 global $woocommerce; 
 ?>
@@ -75,7 +78,7 @@ global $woocommerce;
 		<?php endif; ?>
 
 		<div class="form-row">
-			<?php $woocommerce->nonce_field('pay')?>
+			<?php wc_print_notices('pay')?>
 			<div class="input-button-buy"><span><input type="submit" class="button alt" id="place_order" value="<?php _e('Pay for order', 'sp'); ?>" /></span></div>
 			<input type="hidden" name="woocommerce_pay" value="1" />
 		</div>

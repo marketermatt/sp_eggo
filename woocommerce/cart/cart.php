@@ -1,6 +1,9 @@
 <?php
 /**
  * Cart Page
+ *
+ * @package WooCommerce/Templates
+ * @version 2.3.8
  */
  
 global $woocommerce;
@@ -16,7 +19,7 @@ global $woocommerce;
     <span class="final"><span><?php _e('Final','sp'); ?></span></span>
 </div><!--close status-bg-->
 	<div class="yourtotal"><span class="title"><?php _e('Sub-Total:', 'sp'); ?></span><span class="total"><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span></div>
-<?php $woocommerce->show_messages(); ?>
+<?php wc_print_notices(); ?>
 <table class="shop_table cart" cellspacing="0">
 	<thead>
 		<tr>
@@ -81,19 +84,20 @@ global $woocommerce;
 						
 						<!-- Quantity inputs -->
 						<td class="product-quantity">
-							<?php 
-								if ( $_product->is_sold_individually() ) {
-									$product_quantity = '1';
-								} else {
-									$data_min = apply_filters( 'woocommerce_cart_item_data_min', '', $_product );
-									$data_max = ( $_product->backorders_allowed() ) ? '' : $_product->get_stock_quantity();
-									$data_max = apply_filters( 'woocommerce_cart_item_data_max', $data_max, $_product ); 
-									
-									$product_quantity = sprintf( '<div class="quantity"><input name="cart[%s][qty]" data-min="%s" data-max="%s" value="%s" size="4" title="Qty" class="input-text qty text" maxlength="12" /></div>', $cart_item_key, $data_min, $data_max, esc_attr( $values['quantity'] ) );
-								}
-								
-								echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key ); 					
-							?>
+							<?php
+							if ( $_product->is_sold_individually() ) {
+								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
+							} else {
+								$product_quantity = woocommerce_quantity_input( array(
+									'input_name'  => "cart[{$cart_item_key}][qty]",
+									'input_value' => $values['quantity'],
+									'max_value'   => $_product->backorders_allowed() ? '' : $_product->get_stock_quantity(),
+									'min_value'   => '0'
+								), $_product, false );
+							}
+
+							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key );
+						?>
 						</td>
 						
 						<!-- Product subtotal -->
@@ -124,8 +128,8 @@ global $woocommerce;
 				<?php } ?>
 
 				<input type="submit" class="update button" name="update_cart" value="<?php _e('Update Cart', 'sp'); ?>" /> 
-				
-				<?php $woocommerce->nonce_field('cart') ?>
+				<?php wc_print_notices('cart') ?>
+                <?php wp_nonce_field( 'woocommerce-cart' ); ?>
 			</td>
 		</tr>
 		
@@ -138,10 +142,10 @@ global $woocommerce;
 	
 	<?php do_action('woocommerce_cart_collaterals'); ?>
 	
-	<?php woocommerce_cart_totals(); ?>
+	<?php //woocommerce_cart_totals(); ?>
 	
-	<?php woocommerce_shipping_calculator(); ?>
+	<?php //woocommerce_shipping_calculator(); ?>
     <a href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>" class="checkout-button alt"><span><?php _e('Proceed to Checkout &rarr;', 'sp'); ?></span></a>
-    <?php do_action('woocommerce_proceed_to_checkout'); ?>
+    <?php //do_action('woocommerce_proceed_to_checkout'); ?>
 	
 </div>

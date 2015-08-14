@@ -1,6 +1,9 @@
 <?php
 /**
  * Loop Price
+ *
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 
 global $product;

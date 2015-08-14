@@ -145,7 +145,7 @@ $layout = sp_page_layout();
 					<?php
 					sp_pagination($entries->max_num_pages, 2, true);	
 					?>
-					<?php comments_template( '', true ); ?><?php  ?>
+					<?php //comments_template( '', true ); ?><?php  ?>
                 </div><!-- .entry-content -->
 				<?php 
                     wp_reset_query();

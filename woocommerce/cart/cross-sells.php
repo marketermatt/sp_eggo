@@ -1,6 +1,9 @@
 <?php
 /**
  * Cross-sells
+ *
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 
 global $woocommerce_loop, $woocommerce, $product;

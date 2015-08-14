@@ -1,6 +1,9 @@
 <?php
 /**
  * Thankyou Page
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.2.0
  */
  
 global $woocommerce;

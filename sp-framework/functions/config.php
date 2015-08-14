@@ -17,7 +17,7 @@ if ( function_exists( 'wp_get_theme' ) )
 }
 else 
 {
-	$spthemeinfo = get_theme_data( get_template_directory() . '/style.css' ); // deprecated function since 3.4
+	$spthemeinfo = wp_get_theme( get_template_directory() . '/style.css' ); // deprecated function since 3.4
 }
 
 /**

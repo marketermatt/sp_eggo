@@ -1,6 +1,9 @@
 <?php
 /**
  * Grouped Product Add to Cart
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.1.7
  */
  
 global $woocommerce, $product;

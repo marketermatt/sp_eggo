@@ -57,7 +57,8 @@ function woocommerce_output_related_products()
 	{
 		$count = 3;
 	}
-	woocommerce_related_products( $count, 3 ); // Display 3 products in rows of 3
+	
+	woocommerce_related_products( array($count,3) ); // Display 3 products in rows of 3
 }
 
 // set number of upsell items to display
@@ -188,7 +189,7 @@ function sp_woo_template_loop_product_thumbnail( $context = 'product_grid' )
                     $image_width = $woocommerce->get_image_size( 'shop_catalog_image_width' );
                     $image_height = $woocommerce->get_image_size( 'shop_catalog_image_height' );
                 } else {                    
-                    $catalog_sizes = $woocommerce->get_image_size( 'shop_catalog' );
+                    $catalog_sizes = wc_get_image_size( 'shop_catalog' );
                     $image_width = $catalog_sizes['width'];
                     $image_height = $catalog_sizes['height'];                    
                 }

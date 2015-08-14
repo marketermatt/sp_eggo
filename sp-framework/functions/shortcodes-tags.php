@@ -117,7 +117,8 @@ function sp_tweetbutton_shortcode( $atts, $content = null )
 		endif;
 		
 		$output = '<div class="tweet_sc">' . "\r\n";
-		$output .= '<a href="http://twitter.com/share" class="twitter-share-button" data-url="' . $url . '" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>';	
+		//$output .= '<a href="http://twitter.com/share" class="twitter-share-button" data-url="' . $url . '" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>';	
+		$output .= '<a href=".esc((http://www.twitter.com/share))." class="twitter-share-button" data-url="' . $url . '" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>';	
 		$output .= '</div><!--close tweet_sc-->' . "\r\n";
 		
 		return $output;

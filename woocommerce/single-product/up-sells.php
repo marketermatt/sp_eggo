@@ -1,6 +1,9 @@
 <?php
 /**
  * Up-sells
+ *
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 
 global $product, $woocommerce_loop;

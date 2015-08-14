@@ -5,6 +5,7 @@
  * Override this template by copying it to yourtheme/woocommerce/content-product_cat.php
  *
  * @package WooCommerce
+ * @version     1.6.4
  * @since WooCommerce 1.6
  */
  

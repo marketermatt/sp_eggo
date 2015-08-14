@@ -71,7 +71,7 @@ function sp_upload( $module = array() )
 		}
 		if ( $image_size != null ) 
 		{
-		$output .= '<div class="image-preview" id="queue-' . THEME_SHORTNAME . $module['_attr']['id'] . '"><img src="' . trailingslashit( FRAMEWORK_URL ) . 'timthumb/timthumb.php?src=' . ( isset( $spdata[THEME_SHORTNAME . $module['_attr']['id']] ) ? $spdata[THEME_SHORTNAME . $module['_attr']['id']] : '' ) . '&amp;h=' . $height . '&amp;w=' . $width . '&amp;zc=3&amp;q=90&amp;a=c" class="uploaded-image" style="' . $display . '" /></div>';
+		$output .= '<div class="image-preview" id="queue-' . THEME_SHORTNAME . $module['_attr']['id'] . '"><img src="' .( isset( $spdata[THEME_SHORTNAME . $module['_attr']['id']] ) ? $spdata[THEME_SHORTNAME . $module['_attr']['id']] : '' )  . '" height="' . $height . '" width="' . $width . '" class="uploaded-image" style="' . $display . '" /></div>';
 		}
 	}
 	if ( isset( $spdata[THEME_SHORTNAME . $module['_attr']['id']] ) && $spdata[THEME_SHORTNAME . $module['_attr']['id']] != '' ) 
@@ -138,7 +138,7 @@ function sp_custom_slider( $module = array() )
 		} 
 		if ( $image_size != null ) 
 		{
-		$output .= '<div class="image-preview" id="queue-' . THEME_SHORTNAME . 'homepage_custom_slide_' . $i . '"><img src="' . trailingslashit( FRAMEWORK_URL ) .'timthumb/timthumb.php?src=' . sp_check_ms_image( $spdata[THEME_SHORTNAME . 'homepage_custom_slide_' . $i] ) . '&amp;h=' . $height . '&amp;w=' . $width . '&amp;zc=3&amp;q=90&amp;a=c" class="uploaded-image" style="' . $display . '" /></div>';
+		$output .= '<div class="image-preview" id="queue-' . THEME_SHORTNAME . 'homepage_custom_slide_' . $i . '"><img src="' . sp_check_ms_image( $spdata[THEME_SHORTNAME . 'homepage_custom_slide_' . $i] ) .  '"  height="' . $height . '" width="' . $width . '" class="uploaded-image" style="' . $display . '" /></div>';
 		}
 		if ( $spdata[THEME_SHORTNAME . 'homepage_custom_slide_' . $i] != '' ) 
 		{

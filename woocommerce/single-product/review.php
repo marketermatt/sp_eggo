@@ -3,6 +3,9 @@
  * Review Comments Template
  *
  * Closing li is left out on purpose!
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.1.0
  */
  
 global $post; 

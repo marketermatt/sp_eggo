@@ -142,8 +142,8 @@ if ( ! function_exists( 'sp_product_rate' ) )
 		
 		$response = '';
 		$nonce = $_POST['ajaxCustomNonce'];
-		$rate = mysql_real_escape_string( trim( $_POST['rate'] ) );
-		$id = mysql_real_escape_string( trim($_POST['id'] ) );
+		$rate = addslashes( trim( $_POST['rate'] ) );
+		$id = addslashes( trim($_POST['id'] ) );
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$current_time = time();
 		if ( ! wp_verify_nonce( $nonce, 'ajax_custom_nonce' ) ) 

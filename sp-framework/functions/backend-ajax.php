@@ -317,8 +317,8 @@ function sp_create_page_ajax()
 	     die( 'errors' );
 	}
 	
-	$template = mysql_real_escape_string( $_POST['page_template'] );
-	$new_page_title = mysql_real_escape_string( $_POST['page_title'] );
+	$template = addslashes( $_POST['page_template'] );
+	$new_page_title = addslashes( $_POST['page_title'] );
 
 	$page_check = get_page_by_title( $new_page_title );
 	$new_page = array(
@@ -347,7 +347,7 @@ function sp_check_ms_image_ajax()
 	{
 	     die( 'errors' );
 	}
-	$image = mysql_real_escape_string( $_POST['image'] );
+	$image = addslashes( $_POST['image'] );
 	$image = sp_check_ms_image($image);
 	
 	echo $image;

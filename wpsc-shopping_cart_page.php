@@ -79,7 +79,7 @@ if (!empty($_SESSION['wpsc_checkout_error_messages']) || !empty($_SESSION['wpsc_
          ?>
             
         <?php do_action ( "wpsc_before_checkout_cart_item_image" ); ?>
-               <img src="<?php echo get_template_directory_uri();?>/sp-framework/timthumb/timthumb.php?src=<?php echo get_template_directory_uri(); ?>/images/no-product-image.jpg&amp;h=<?php echo $image_height; ?>&amp;w=<?php echo $image_width; ?>&amp;zc=1&amp;q=90&amp;a=c" alt="<?php echo wpsc_cart_item_name(); ?>" title="<?php echo wpsc_cart_item_name(); ?>" class="product_image" />
+               <img src="<?php echo get_template_directory_uri(); ?>/images/no-product-image.jpg" height="<?php echo $image_height; ?>" width="<?php echo $image_width; ?>" alt="<?php echo wpsc_cart_item_name(); ?>" title="<?php echo wpsc_cart_item_name(); ?>" class="product_image" />
         <?php do_action ( "wpsc_after_checkout_cart_item_image" ); ?>
            
          <?php endif; ?>

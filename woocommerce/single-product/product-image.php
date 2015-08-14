@@ -1,6 +1,9 @@
 <?php
 /**
  * Single Product Image
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.0.14
  */
 
 global $post, $woocommerce, $product;
@@ -11,7 +14,7 @@ if ( version_compare( WOOCOMMERCE_VERSION, '2.0', '<' ) ) {
 	$image_width = get_option( 'woocommerce_single_image_width' );
 	$image_height = get_option( 'woocommerce_single_image_height' );
 } else {			
-	$image_sizes = $woocommerce->get_image_size( 'shop_single' );
+	$image_sizes = wc_get_image_size( 'shop_single' );
 	$image_width = $image_sizes['width'];
 	$image_height = $image_sizes['height'];
 }

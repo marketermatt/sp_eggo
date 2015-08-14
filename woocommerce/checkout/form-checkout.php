@@ -1,3 +1,12 @@
+<?php
+/**
+ * Checkout Form
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.3.0
+ */
+ ?>
+
 <?php global $woocommerce; $woocommerce_checkout = $woocommerce->checkout(); ?>
 
 <div id="status-bg">
@@ -6,7 +15,7 @@
     <span class="final"><span><?php _e('Final','sp'); ?></span></span>
 </div><!--close status-bg-->
 
-<?php $woocommerce->show_messages(); ?>
+<?php wc_print_notices(); ?>
 
 <?php do_action('woocommerce_before_checkout_form');
 

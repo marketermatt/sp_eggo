@@ -1,6 +1,9 @@
 <?php
 /**
  * Checkout Coupon Form
+ *
+ * @package 	WooCommerce/Templates
+ * @version     2.2
  */
 if ( get_option( 'woocommerce_enable_coupons' ) == 'no' || get_option( 'woocommerce_enable_coupon_form_on_checkout' ) == 'no' ) return;
 

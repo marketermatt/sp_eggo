@@ -3,6 +3,9 @@
  * My Orders
  *
  * Shows recent orders on the account page
+ *
+ * @package WooCommerce/Templates
+ * @version 2.3.10
  */
  
 global $woocommerce;
