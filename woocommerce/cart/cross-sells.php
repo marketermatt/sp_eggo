@@ -3,7 +3,7 @@
  * Cross-sells
  *
  * @package 	WooCommerce/Templates
- * @version     1.6.4
+ * @version     2.4.0
  */
 
 global $woocommerce_loop, $woocommerce, $product;

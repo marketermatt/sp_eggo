@@ -3,7 +3,7 @@
  * Checkout Login Form
  *
  * @package 	WooCommerce/Templates
- * @version     2.0.0
+ * @version     2.4.0
  */
 if (is_user_logged_in()) return;
 if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="no") return;

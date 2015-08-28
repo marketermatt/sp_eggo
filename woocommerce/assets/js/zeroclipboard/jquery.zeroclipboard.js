@@ -1468,7 +1468,7 @@
         inspectPlugin(plugin);
         if (_navigator.plugins["Shockwave Flash 2.0"]) {
           hasFlash = true;
-          flashVersion = "2.0.0.11";
+          flashVersion = "2.4.0.11";
         }
       } else if (_navigator.mimeTypes && _navigator.mimeTypes.length) {
         mimeType = _navigator.mimeTypes["application/x-shockwave-flash"];
