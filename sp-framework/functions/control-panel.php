@@ -110,7 +110,7 @@ function sp_admin_menu()
 {
 		global $spthemeinfo;		
 		
-		add_theme_page( 'sp', $spthemeinfo['Name'], 'manage_options', 'sp', 'sp_panel', trailingslashit( FRAMEWORK_URL ) . 'images/favicon.png', 56);
+		add_menu_page( 'sp', $spthemeinfo['Name'], 'manage_options', 'sp', 'sp_panel', trailingslashit( FRAMEWORK_URL ) . 'images/favicon.png', 56);
 		add_submenu_page( 'sp', $spthemeinfo['Name'], 'Theme Settings', 'manage_options', 'sp', 'sp_panel' );			
 }
 
@@ -153,14 +153,7 @@ function sp_panel()
                             <?php } ?>
                             <li class="help"><a href="#help" title="Help"><?php _e( 'HELP?', 'sp' ); ?></a></li>
 							
-							<div  style="float:left; margin:0px;">
-					<ul class="tabs">
-					<li class="License">
-					<a href="<?php echo esc_url( admin_url( 'index.php?page=api_manager_theme_eggo_dashboard' ) );?>" title="<?php esc_attr_e( 'License', 'sp-theme' ); ?>"><?php _e( 'License', 'sp-theme' ); ?></a>
-					</li>
-					</ul>
-					</div>
-							
+											
                         </ul><!--close tabs-->
                     </div><!--close nav-->
                     <div id="header-meta" class="group">
@@ -484,8 +477,7 @@ function sp_panel()
 										}
 										if ( isset( $wrapper['_attr']['title'] ) ) 
 										{
-											//echo '<a href="http://splashingpixels.com/member-dashboard/" title="Splashing Pixels" target="_blank">' . __( 'For more support, please go to our site support forums.', 'sp' ) . '</a>';
-											echo "<a href='.esc_url( ('http://www.splashingpixels.com/my-account/', 'sp')).' target='_blank'>' . __( 'For more support, please go to our site support forums.', 'sp' ) . '</a>";
+											echo '<a href="http://splashingpixels.com/member-dashboard/" title="Splashing Pixels" target="_blank">' . __( 'For more support, please go to our site support forums.', 'sp' ) . '</a>';
 											echo '</fieldset>' . "\r\n";
 										}	
 									} // end 2nd foreach loop
@@ -501,7 +493,7 @@ function sp_panel()
             </div><!--close content-->
             <div id="footer-meta" class="group">
             	<input name="save" type="submit" value="SAVE ALL" class="save" />
-                <a href="<?php echo esc_url( ('http://www.splashingpixels.com/'));?>" title="Splashing Pixels" target="_blank" class="logo-link">Splashing Pixels</a>
+                <a href="http://splashingpixels.com" title="Splashing Pixels" target="_blank" class="logo-link">Splashing Pixels</a>
             </div><!--close footer-meta-->
         </form>
     </div><!--close wrap-->	
