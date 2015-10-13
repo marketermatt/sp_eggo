@@ -88,7 +88,7 @@ global $woocommerce, $product, $post;
 		<tbody>
 			<?php $loop = 0; foreach ( $attributes as $name => $options ) : $loop++; ?>
 				<tr>
-					<td class="label"><label for="<?php echo sanitize_title($name); ?>"><?php echo $woocommerce->attribute_label( $name ); ?></label></td>
+					<td class="label"><label for="<?php echo sanitize_title($name); ?>"><?php echo wc_attribute_label( $name ); ?></label></td>
 					<td class="value"><select id="<?php echo esc_attr( sanitize_title($name) ); ?>" name="attribute_<?php echo sanitize_title($name); ?>">
 						<option value=""><?php echo __( 'Choose an option', 'sp' ) ?>&hellip;</option>
 						<?php
@@ -147,9 +147,14 @@ global $woocommerce, $product, $post;
 	<div class="single_variation_wrap single_variation_wrap_hook">
 		<div class="single_variation single_variation_hook group"></div>
 		<div class="variations_button variations_button_hook">
-			<input type="hidden" name="variation_id" value="" />
+
 			<?php woocommerce_quantity_input(); ?>
             <div class="woo_buy_button_container group">
+			<input type="hidden" name="add-to-cart" value="<?php echo $product->id; ?>" />
+			<input type="hidden" name="product_id" value="<?php echo esc_attr( $post->ID ); ?>" />
+			<input type="hidden" name="variation_id" class="variation_id" value="" />
+
+			<?php do_action( 'woocommerce_after_single_variation' ); ?>
                 <div class="input-button-buy"><span><button type="submit" class="single_add_to_cart_button button alt" data-product_id="<?php echo $product->id; ?>"><?php echo apply_filters('single_add_to_cart_text', __('Add to cart', 'sp'), $product->product_type); ?></button></span>
                 </div><!--close input-button-buy-->
                 <div class="loading_animation">
@@ -160,6 +165,14 @@ global $woocommerce, $product, $post;
             
 		</div>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
 	<div><input type="hidden" name="product_id" value="<?php echo esc_attr( $post->ID ); ?>" /></div>
 
 	<?php do_action('woocommerce_after_add_to_cart_button'); ?>
