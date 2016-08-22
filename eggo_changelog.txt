@@ -1,0 +1,340 @@
+<pre>
+{3.4.3} - 8/22/2016
+Update  -  update woocommerce templates
+
+
+{3.4.2} - 7/29/2015
+fixed -  fixed API response and API key saving issue
+
+{2.2.5} 6/1/15
+Added - Declare WooCommerce Support
+Added - Theme licensing
+Fixed - Timthumb Issue
+
+{2.2.4} 11/15/13
+Fixed - WPEC variable products were able to be added to cart without selecting a variation
+
+{2.2.3} 10/26/13
+Update - Timthumb version 2.8.13
+
+{2.2.2} 9/6/13
+Update - PO files
+Update - Misc CSS adjustments
+
+{2.2.1} 5/7/13
+Fixed - Compatibility issues with the latest released WPEC 3.8.11.1
+Fixed - Lightbox thumbnail gallery setting was not working
+Update - Misc CSS adjustments
+
+{2.2.0} 4/30/13
+Fixed - Logout issues with sessions
+Update - Misc styling in CSS
+
+{2.1.9} 3/4/13
+Fixed - Compatibility issues with WooCommerce 2.0+
+Update - Various CSS styles
+
+{2.1.8} 3/4/13
+Fixed - Tagline styling color was not being applied
+Fixed - Custom background styling color was not being applied
+Added - WPEC backwards compatibility with wpsc_get_customer_meta function
+Update - Maintenance js 1.6.1
+
+{2.1.7} 2/1/13
+Fixed - Select dropdown not working properly when adding custom widgets
+
+{2.1.6} 1/16/13
+Fixed - Styling background color were not shown in the style preview
+Update - PO/MO files
+
+{2.1.5} 12/12/12
+Update - Strip script tag from custom header/footer script data 
+Update - Thumbnail crop setting to boolean 1 instead of true
+Update - jQuery Cycle is now replaced with Caroufredsel plugin
+Update - Set medium/large image sizes to zero to prevent auto generation from WP
+Update - Timthumb version 2.8.11
+Update - jQuery version 1.8.3
+Update - jQuery UI version 1.9.2 (admin side left at 1.8.23 to work with timepicker)
+Update - isotope version 1.5.21
+Update - jQuery Chosen version 0.9.10
+Update - jQuery Timepicker version 1.1.1
+Update - Removed version number from script filenames
+Update - PO/MO files
+Update - Misc. CSS styles
+Added - Custom login Login/Get Password get_text() function
+Added - Apply filters function to theme script names to allow override
+Added - Styles to the transaction results page for WPEC
+Added - Ability to turn OFF sitewide widgets for specific post/page
+Added - Ability to set portfolio entry image sizes for list and single views
+Added - A check to see if featured products are set so it doesn't display errors
+Added - jQuery Touch Swipe Plugin
+Added - Compatibility with WooCommerce Gravity Form Product Add-on Plugin
+Fixed - Theme options footer textarea would not save if value was empty
+Fixed - Theme reset was not functioning properly when no new data was being updated in options
+Fixed - Issue with jQuery UI with WordPress 3.5
+Removed - jQuery Wipe Plugin
+Removed - jQuery Cycle Plugin
+
+{2.1.4} 11/2/12
+Fixed - Product views were not working due to a change in WPEC 3.8.9
+Fixed - Comments showing when disabled due to a change in WPEC 3.8.9
+Updated - Checkout page to remove sessions due to a change in WPEC 3.8.9
+
+{2.1.3} 10/12/12
+Added - Woocommerce Ability to control the display of the tabs in detail product view
+Added - Height attribue to the content slider
+Update - WPEC Added preventdefault to checkout continue/back links for compatibility
+Update - Misc CSS adjustments
+Fixed - A bug where the background color is not working
+Fixed - Portfolio single image size was not being dynamically resized on mobile phones
+Fixed - Lightbox duplicate images issue
+Fixed - Shortcode Google maps was not resizing properly
+Fixed - Shortcode content slider when all images are used, slider would collapse
+
+{2.1.2} 10/6/12
+Update - Caroufredsel 5.6.4
+Update - jQuery 1.8.1
+Update - jQuery UI 1.8.23
+Update - WPEC removed dependency of Gold Cart for multi product images
+Update - Added missing semicolon in the JS namespace declaration
+Update - WPEC product searches now use proper grid template
+Fixed - Woocommerce product multi image swap was not working correctly
+Fixed - Menu active states not properly showing on sub level pages
+Added - Woocommerce/WPEC ability to turn off display of multi product image under main product image
+Added - Mobile "go to" text is now translatable
+
+{2.1.1} 8/7/2012
+Fixed - Media libraby search isn't working properly
+Fixed - Custom functions were loading in wrong order
+Fixed - Custom widgets were not showing titles in the widget settings page
+Fixed - Media library search isn't working properly
+Fixed - Paypal buynow button alignment
+Update - Change load order of custom_styles.css
+Update - Modernizr 2.6.1
+Update - CarouFredSel 5.6.3
+Update - jQuery Ui 1.8.21 now loading from CDN
+Update - Misc. CSS adjustments
+Update - Removed more details from default product listing
+Update - Moved more details to below the image and add to cart sections with TABS
+Update - Refactored homepage featured grid products
+Added - Homepage featured grid products can now select 1 to 30 products to display
+Added - Homepage featured grid products can now select from multiple product categories to display
+Added - Now WooCommerce Ready
+Added - Option to turn off custom meta fields display on single product page
+
+{2.1} 7/9/2012
+Added - Ability for searches to look within tags.
+Added - Info box shortcode
+Added - Button shortcode now has different types (normal, normal-rounded, big, big-rounded)
+Added - Dropcap shortcode
+Added - Maintenance Mode
+Added - Backend admin login logo no longer links to Wordpress.org but to your own site
+Added - Ability to select multiple categories for the footer featured product carousel
+Added - Site preview on custom styles
+Added - Ability to customize all text, heading, links site wide.
+Added - WPEC Product Category accordion widget
+Added - WPEC Product price range slider filter widget
+Added - 4 new promotional/ads widget area (site top, site bottom, page top and page bottom)
+Added - Promotional widget to accompany the 4 new widget area
+Added - Ability to export/import theme settings
+Added - Ability to show gallery only on portfolios
+Added - Ability to turn off mobile ready (responsive theme)
+Removed - Blog styles in favor of site wide style consistency
+Update - Consolidated Google Fonts array into one HTTP request call
+Update - Caroufredsel 5.6.1
+Update - Misc. CSS adjustments
+Update - PO/MO files
+Fixed - WP 3.4 changed the size of the backend logo size
+Fixed - Show category image/description when inside the said category -- the image is not sized properly
+Fixed - WPMS now correctly references images with timthumb
+Fixed - Backend login style now correctly detects the skin being used
+
+{2.0.3} 5/10/2012
+Update - jQuery Cycle 2.9999.5
+Update - jQuery Ui 1.8.20
+Update - Caroufredsel 5.5.5
+Update - Misc CSS adjustments
+Update - JS scripts are now wrapped in a custom namespace to prevent conflicts
+Added - Ability to turn off blog post text truncate function.
+Added - Ability to turn off sitewide sidebar widgets
+
+{2.0.2} 4/30/12
+Update - jQuery UI 1.8.19
+Update - Misc. CSS adjustments
+Fixed - Portfolio categories were selecting all entries from different categories instead of the selected category only
+Fixed - Upload path was showing wrong path when custom media upload path is set
+Fixed - When site is resized to a width smaller than 960, the homepage slider description is bumped to the bottom and being cut off
+
+{2.0.1} 4/18/2012
+Update - Caroufredsel 5.5.2
+Update - jQuery Cycle 2.9999.4
+Update - jQuery UI 1.8.18
+Update - Video JS 3.2.0
+Update - Isotope 1.5.19
+Update - jQuery 1.7.2
+
+{2.0} 3/28/2012
+Added - CSS classes to widgets to allow for custom style on particular widget
+Added - Global image options - filters/sharpening/canvas color/PNG transparency
+Added - Global sidebar settings for pages
+Added - Individual post/page page layout settings to override global if needed
+Added - Custom page/post/product page widgets where you can assign unique widgets specific to that page
+Added - More Google fonts selection
+Added - Audio player shortcode
+Added - Video player shortcode
+Added - Numeration pagination with option to use previous/next style or numeration style
+Added - Custom portfolio template to showcase anything you want!
+Update - Replaced jCarousellite with carouFredSel
+Update - Theme has been completely re-structure for a responsive design which is mobile ready
+Update - Timthumb 2.8.10
+Update - jQuery cycle 2.9999.3
+Update - jQuery pretty Photo 3.1.4
+
+{1.2.2} 2/26/2012
+Added - Product variation image swap
+Added - Checkout product image correctly displays variation image
+Update - Timthumb 2.8.9
+Update - jQuery Cycle 2.9999.2
+Update - Languages PO/MO
+Update - Modernizr 2.5.3
+Update - Change grid view products per row to automatically wrap to next line to make it flexible with or without sidebar
+Removed - Grid view products per row
+
+{1.2.1} 2/12/2012
+Added - FAQ questions to the help section
+Added - Ability to reverse the carousel slider's slide direction
+Added - Wordpress post formats for future use
+Added - Post truncate function to truncate post content in blog listings (this option is set within each post's settings)
+Added - More details slider in the single product view for the additional description text
+Added - Product review styling
+Added - Product review global on/off
+Added - Custom backend login logo
+Added - Content slider shortcode
+Added - Content tabs shortcode
+Added - Content toggle shortcode
+Added - jQuery UI library 1.8.17
+Update - Grid items per row has been increase to a maximum 10 items
+Update - Blog post does not need to have featured image.
+Update - jQuery 1.7.1
+Update - Scan through to fix any invalid html per HTML5 specs
+Update - Various CSS/html adjustments
+Update - Grid layout shortcode - improved flexibility - please see theme demo shortcodes page for NEW details
+Fixed - Menu with categories class not displaying correctly in Chrome and Safari browsers
+Fixed - T&amp;C if not checked bumps checkout form back to step 1
+Fixed - Images with captions width now correctly behaves and shows within the width of the image
+
+{1.2} 1/18/2012
+Updated - page.php to use wpsc_is_single_product() to check for single product page
+Updated - Terms &amp; Conditions click off close function to check if the overlay box is visible
+Added - Option to choose between displaying categories or products within a category on footer carousel
+Added - Homepage product grid section title
+Added - Option to set cut off homepage cycler product description text
+Added - Option to set cut off denote characters on homepage cycler product description
+Added - Option to set cut off text description on featured product on top of page
+Added - Option to set cut off denote characters on text description on featured product on top of page
+Added - Option to set cut off text testimonials on footer testimonial section
+Added - Option to set cut off denote characters on footer testimonial section
+Added - Blog post fallback image if no featured post image is set
+Added - Option to turn on/off gallery thumbnails in product popup lightbox
+Added - Option to turn on/off gallery title in product popup lightbox
+Added - Homepage slider product image click which is redirect to product detail page
+
+{1.1.9} 1/3/2012
+Added - Option to turn on/off the display of the secure icon and text display on the checkout page
+Added - Option to upload your own SSL secured seal on the checkout page
+Added - Option to paste in your own SSL secured seal code on the checkout page
+Added - Product detail gallery thumbnail image options
+Added - Contact form 7 plugin styles
+Added - Default no product image fallback
+Added - Product category widget image control in the images options
+Updated - Timthumb 2.8.5
+Updated - Relocated comment reply script to the main site js script to reduce 1 extra http request
+Updated - Product category widget to not display sub-categories and applied timthumb enhancement
+
+{1.1.8} 12/23/2011
+Updated - CSS class "top" changed to "remove-top-border" to remove top border line when dropdown menu has categories defined to show 2 column layout
+Updated - Timthumb 2.8.4
+Updated - CSS for blog category description not margining properly
+Fixed - Facebook LIKE button comment was not displaying properly
+
+{1.1.7} 12/15/2011
+Fixed - After Wordpress 3.3 upgrade - theme login styling was misaligned
+
+{1.1.6} 11/30/2011
+Update - Timthumb 2.8.3
+Update - Language files
+Update - Adjusted size calculations to images in the quickview container
+Fixed - Anchor tags were being stripped in the list shortcode
+Added - Google Plus Profile Icon
+Added - custom background image
+Added - Ability to show/hide price and more-info/buy now link on homepage featured cycler
+
+{1.1.5} 11/22/2011
+Update - jQuery Cycle 2.9999
+Update - Facebook "LIKE" button is now using HTML5 specs
+Update - Page.php auto detect if sidebar widgets are inuse and if not, choose onecolumn display
+Update - SP related post function removed deprecated arguement 'caller_get_posts' and replaced with 'ignore_sticky_posts'
+Fixed - Homepage featured product grid view correctly displays the amount of items displayed even when WPEC pagination is off
+Fixed - Custom RSS URL bug
+Fixed - Vimeo shortcode bug
+Fixed - Page sidebar layout
+Added - Facebook Open Graph Integation
+
+{1.1.4} 11/18/2011
+Added - WPAUTOP to product additional description
+Added - Price display near add to cart button on product default and single detail view
+Added - Ability to reset all product star ratings
+Update - jQuery 1.7
+Update - Checkout page product images set to 50 width and 50 height
+Update - Timthumb version 2.8.2
+Update - jQuery Cycle version 2.9997
+Update - Modernizr version 2.0.6
+Fixed - Search style was left out
+Fixed - Facebook showing white background on IE
+Fixed - Blog next/previous button was causing display issue when title is too long
+
+{1.1.3} 9/29/2011
+Fixed - Homepage slider was picking up products that were not published
+Fixed - "List" shortcode not correctly displaying the list styles
+Fixed - Terms and conditions text were overflowing
+Fixed - Gravatar in discussion settings were not saving
+Update - "List" shortcode margin increased to 30px
+Update - "List" shortcode line-height increased to 1.2em
+Update - Increased width for Facebook like button inside quickview box
+Update - Adjusted CSS to accomodate larger logo images for the login screen
+Update - jQuery version to 1.6.4
+Added - Ability to turn off product view buttons ( list/grid )
+Added - Ability to turn off related posts
+Added - Option to change the size/color/style of your Main Navigation Menu text up to 3 levels
+
+{1.1.2} 9/12/2011
+Added - Option to enter custom text for Related Post item
+Fixed - Quickview popup black overlay is fully opaque in IE browsers
+Fixed - When image swap is off, quickview image is not retaining set width
+
+{1.1.1} 9/3/2011
+Removed - WP Global Auto Paragraph from styling options
+Added - Per page/post WP Auto Paragraph
+Fixed - Some functions were not pointing to the active theme directory when using child theme
+Fixed - Quickview image size when is square or the height is less than width, slight distortion occurs.
+Fixed - JS error when no product is selected for carousel sliders
+Updated - Gold Cart 2.9.4 files
+Updated - Increase the product display limit on homepage carousel slider to 6
+
+{1.1} 8/19/2011
+Fixed - Quickview container is not perfectly centered
+Added - Ability to turn on/off sidebar for product pages and blog pages separately and choose left or right orientations for the sidebar
+Added - Ability to turn on/off pause on hover which will pause the slide when mouse is hover over it on homepage slider
+Added - Child theme ready
+Update - PrettyPhoto plugin 3.13
+Update - jQuery Cycle plugin 2.9995
+
+{1.0.1} 8/14/2011
+Fixed - WPEC Fancy Notification bug
+Fixed - Cross sales product type that sometimes picks up wrong post types
+Fixed - Custom uploaded logo not being loaded in backend admin login
+Fixed - Social media icons too close to rating stars on single product page
+Added - Google Plus One button
+Added - Cross sales custom title verbiage
+
+{1.0} 8/4/2011 - release</pre>
